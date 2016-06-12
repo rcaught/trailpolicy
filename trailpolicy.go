@@ -1,28 +1,30 @@
 package main
 
-import "fmt"
+import (
+  "encoding/json"
+  "fmt"
+)
 
 type cloudtrailLog struct {
   Records []cloudtrailRecord
 }
 
 type cloudtrailRecord struct {
-  EventVersion       string
-  UserIdentity       map[string]interface{}
-  EventTime          string
-  EventSource        string
-  EventName          string
-  UserAgent          string
-  SourceIPAddress    string
-  AwsRegion          string
+  EventVersion    string
+  UserIdentity    map[string]interface{}
+  EventTime       string
+  EventSource     string
+  EventName       string
+  UserAgent       string
+  SourceIPAddress string
+  AwsRegion       string
 }
 
 func main() {
-  Parse()
-  CreatePolicy()
+  parse()
+  createPolicy()
 }
 
-func Parse() {
 var data = `
 {
     "Records": [{
@@ -68,8 +70,18 @@ var data = `
   ]
 }`
 
+func parse() (*[]cloudtrailRecord, error) {
+  trail := cloudtrailLog{}
+
+  if err := json.Unmarshal([]byte(data), &trail); err != nil {
+    return nil, fmt.Errorf("Error unmarshaling Cloudtrail JSON: %s", err.Error())
+  }
+
+  // fmt.Println(trail.Records[0].EventName)
+
+  return &trail.Records, nil
 }
 
-func CreatePolicy() {
+func createPolicy() {
 
 }
