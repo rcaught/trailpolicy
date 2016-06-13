@@ -20,11 +20,6 @@ type cloudtrailRecord struct {
   AwsRegion       string
 }
 
-func main() {
-  parse()
-  createPolicy()
-}
-
 var data = `
 {
     "Records": [{
@@ -70,10 +65,22 @@ var data = `
   ]
 }`
 
-func parse() (*[]cloudtrailRecord, error) {
+func main() {
+  if cloudtrailRecords, err := parse(data); err != nil {
+    fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
+  } else {
+    if val, err := createPolicy(cloudtrailRecords); err != nil {
+      fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
+    } else {
+      fmt.Println(val)
+    }
+  }
+}
+
+func parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
   trail := cloudtrailLog{}
 
-  if err := json.Unmarshal([]byte(data), &trail); err != nil {
+  if err := json.Unmarshal([]byte(cloudtrailJSON), &trail); err != nil {
     return nil, fmt.Errorf("Error unmarshaling Cloudtrail JSON: %s", err.Error())
   }
 
@@ -82,6 +89,11 @@ func parse() (*[]cloudtrailRecord, error) {
   return &trail.Records, nil
 }
 
-func createPolicy() {
+func createPolicy(r *[]cloudtrailRecord) (bool, error) {
+  for index, val := range *r {
+    fmt.Println(index)
+    fmt.Println(val.EventName)
+  }
 
+  return true, nil
 }
