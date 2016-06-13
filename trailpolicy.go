@@ -123,7 +123,7 @@ func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
 }
 
 func createPolicyJSON(doc policyDocument) ([]byte, error) {
-  result, err := json.Marshal(doc)
+  result, err := json.MarshalIndent(doc, "", "  ")
 
   if err != nil {
     return nil, fmt.Errorf("xxxxx: %s", err.Error())
