@@ -20,6 +20,19 @@ type cloudtrailRecord struct {
   AwsRegion       string
 }
 
+type policyDocument struct {
+  Version   string
+  Statement []policyStatement
+}
+
+type policyStatement struct {
+  Effect   string
+  Action   action
+  Resource string
+}
+
+type action []string
+
 var data = `
 {
     "Records": [{
@@ -90,10 +103,22 @@ func parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
 }
 
 func createPolicy(r *[]cloudtrailRecord) (bool, error) {
+  actions := action{}
+
   for index, val := range *r {
     fmt.Println(index)
     fmt.Println(val.EventName)
+
+    actions = append(actions, val.EventName)
   }
+
+  fmt.Println(actions)
+
+  document := policyDocument{
+    Version:   "Current date",
+    Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: actions}}}
+
+  fmt.Printf("%+v\n", document)
 
   return true, nil
 }
