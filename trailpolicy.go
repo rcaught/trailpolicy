@@ -3,6 +3,7 @@ package main
 import (
   "encoding/json"
   "fmt"
+  "strings"
 )
 
 type cloudtrailLog struct {
@@ -88,7 +89,7 @@ func main() {
       if j, err := createPolicyJSON(val); err != nil {
         fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
       } else {
-        fmt.Println(j)
+        fmt.Println(string(j))
       }
     }
   }
@@ -113,7 +114,10 @@ func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
     fmt.Println(index)
     fmt.Println(val.EventName)
 
-    actions = append(actions, val.EventName)
+    service := strings.Split(val.EventSource, ".")[0]
+    action := service + ":" + val.EventName
+
+    actions = append(actions, action)
   }
 
   fmt.Println(actions)
