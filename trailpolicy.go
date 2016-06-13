@@ -89,7 +89,7 @@ func main() {
       if j, err := createPolicyJSON(val); err != nil {
         fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
       } else {
-        fmt.Println(string(j))
+        fmt.Print(string(j))
       }
     }
   }
@@ -102,31 +102,22 @@ func parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
     return nil, fmt.Errorf("Error unmarshaling Cloudtrail JSON: %s", err.Error())
   }
 
-  // fmt.Println(trail.Records[0].EventName)
-
   return &trail.Records, nil
 }
 
 func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   actions := action{}
 
-  for index, val := range *r {
-    fmt.Println(index)
-    fmt.Println(val.EventName)
-
+  for _, val := range *r {
     service := strings.Split(val.EventSource, ".")[0]
     action := service + ":" + val.EventName
 
     actions = append(actions, action)
   }
 
-  fmt.Println(actions)
-
   document := policyDocument{
     Version:   "Current date",
     Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: actions}}}
-
-  fmt.Printf("%+v\n", document)
 
   return document, nil
 }
@@ -138,6 +129,5 @@ func createPolicyJSON(doc policyDocument) ([]byte, error) {
     return nil, fmt.Errorf("xxxxx: %s", err.Error())
   }
 
-  fmt.Printf("%+v\n", result)
   return result, nil
 }
