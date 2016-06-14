@@ -72,18 +72,24 @@ func createPolicyJSON(doc policyDocument) ([]byte, error) {
 }
 
 // Convert takes a JSON based Cloudtrail log and returns a JSON based IAM Policy Document
-func Convert(cloudtrailJSON []byte) ([]byte, error) {
-  if cloudtrailRecords, err := parse(cloudtrailJSON); err != nil {
-    fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
-  } else {
-    if val, err := createPolicy(cloudtrailRecords); err != nil {
-      fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
-    } else {
-      if j, err := createPolicyJSON(val); err != nil {
-        fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
-      } else {
-        fmt.Print(string(j))
-      }
-    }
+func Convert(cloudtrailJSON []byte) (string, error) {
+  cloudtrailRecords, err := parse(cloudtrailJSON)
+
+  if err != nil {
+    return nil, fmt.Errorf("xxxxx: %s", err.Error())
   }
+
+  policy, err := createPolicy(cloudtrailRecords)
+
+  if err != nil {
+    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+  }
+
+  json, err := createPolicyJSON(policy)
+
+  if err != nil {
+    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+  }
+
+  return string(json), nil
 }
