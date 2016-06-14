@@ -28,11 +28,11 @@ type policyDocument struct {
 
 type policyStatement struct {
   Effect   string
-  Action   action
+  Action   actions
   Resource string
 }
 
-type action []string
+type actions []string
 
 func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
   trail := cloudtrailLog{}
@@ -45,7 +45,7 @@ func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
 }
 
 func createPolicy(r *[]cloudtrailRecord) (*policyDocument, error) {
-  actions := action{}
+  actions := actions{}
 
   for _, val := range *r {
     service := strings.Split(val.EventSource, ".")[0]
