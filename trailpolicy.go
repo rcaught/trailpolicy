@@ -11,14 +11,8 @@ type cloudtrailLog struct {
 }
 
 type cloudtrailRecord struct {
-  EventVersion    string
-  UserIdentity    map[string]interface{}
-  EventTime       string
-  EventSource     string
-  EventName       string
-  UserAgent       string
-  SourceIPAddress string
-  AwsRegion       string
+  EventSource string
+  EventName   string
 }
 
 type policyDocument struct {
