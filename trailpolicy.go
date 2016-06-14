@@ -75,7 +75,7 @@ func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   }
 
   document := policyDocument{
-    Version:   "Current date",
+    Version:   "2012-10-17",
     Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: actions}}}
 
   return document, nil
