@@ -34,19 +34,17 @@ type policyStatement struct {
 
 type action []string
 
-// Parses a Cloudtrail log file
-func Parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
+func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
   trail := cloudtrailLog{}
 
-  if err := json.Unmarshal([]byte(cloudtrailJSON), &trail); err != nil {
+  if err := json.Unmarshal(cloudtrailJSON, &trail); err != nil {
     return nil, fmt.Errorf("Error unmarshaling Cloudtrail JSON: %s", err.Error())
   }
 
   return &trail.Records, nil
 }
 
-// Creates a struct that represents a Policy Document
-func CreatePolicy(r *[]cloudtrailRecord) (policyDocument, error) {
+func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   actions := action{}
 
   for _, val := range *r {
@@ -63,13 +61,29 @@ func CreatePolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   return document, nil
 }
 
-// Turns a struct representation of a Policy Document into the actual JSON
-func CreatePolicyJSON(doc policyDocument) ([]byte, error) {
+func createPolicyJSON(doc policyDocument) ([]byte, error) {
   result, err := json.MarshalIndent(doc, "", "  ")
 
   if err != nil {
-    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+    return nil, fmt.Errorf("Error marshaling Policy Document: %s", err.Error())
   }
 
   return result, nil
+}
+
+// Convert takes a JSON Cloudtrail log and returns a JSON based IAM Policy Document
+func Convert(cloudtrailJSON []byte) ([]byte, error) {
+  if cloudtrailRecords, err := parse(cloudtrailJSON); err != nil {
+    fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
+  } else {
+    if val, err := createPolicy(cloudtrailRecords); err != nil {
+      fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
+    } else {
+      if j, err := createPolicyJSON(val); err != nil {
+        fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
+      } else {
+        fmt.Print(string(j))
+      }
+    }
+  }
 }
