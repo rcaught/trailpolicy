@@ -71,7 +71,7 @@ func createPolicyJSON(doc policyDocument) ([]byte, error) {
   return result, nil
 }
 
-// Convert takes a JSON Cloudtrail log and returns a JSON based IAM Policy Document
+// Convert takes a JSON based Cloudtrail log and returns a JSON based IAM Policy Document
 func Convert(cloudtrailJSON []byte) ([]byte, error) {
   if cloudtrailRecords, err := parse(cloudtrailJSON); err != nil {
     fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))

@@ -10,9 +10,9 @@ import (
 func main() {
   bytes, _ := ioutil.ReadAll(os.Stdin)
 
-  if policyDocument, err := trailpolicy.Convert(string(bytes)); err != nil {
+  if policyDocument, err := trailpolicy.Convert(bytes); err != nil {
     fmt.Println(fmt.Errorf("Error: %s", err.Error()))
   } else {
-    fmt.Print(string(policyDocument))
+    fmt.Print(policyDocument)
   }
 }
