@@ -76,19 +76,19 @@ func Convert(cloudtrailJSON []byte) (string, error) {
   cloudtrailRecords, err := parse(cloudtrailJSON)
 
   if err != nil {
-    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("xxxxx: %s", err.Error())
   }
 
   policy, err := createPolicy(cloudtrailRecords)
 
   if err != nil {
-    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("xxxxx: %s", err.Error())
   }
 
   json, err := createPolicyJSON(policy)
 
   if err != nil {
-    return nil, fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("xxxxx: %s", err.Error())
   }
 
   return string(json), nil
