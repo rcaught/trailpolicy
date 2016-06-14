@@ -44,7 +44,7 @@ func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
   return &trail.Records, nil
 }
 
-func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
+func createPolicy(r *[]cloudtrailRecord) (*policyDocument, error) {
   actions := action{}
 
   for _, val := range *r {
@@ -58,17 +58,17 @@ func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
     Version:   "2012-10-17",
     Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: actions}}}
 
-  return document, nil
+  return &document, nil
 }
 
-func createPolicyJSON(doc policyDocument) ([]byte, error) {
-  result, err := json.MarshalIndent(doc, "", "  ")
+func createPolicyJSON(document *policyDocument) (*[]byte, error) {
+  result, err := json.MarshalIndent(*document, "", "  ")
 
   if err != nil {
     return nil, err
   }
 
-  return result, nil
+  return &result, nil
 }
 
 // Convert takes a JSON based Cloudtrail log and returns a JSON based IAM Policy Document
@@ -91,5 +91,5 @@ func Convert(cloudtrailJSON []byte) (string, error) {
     return "", fmt.Errorf("Error encoding Policy Document: %s", err.Error())
   }
 
-  return string(json), nil
+  return string(*json), nil
 }
