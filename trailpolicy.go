@@ -3,8 +3,6 @@ package trailpolicy
 import (
   "encoding/json"
   "fmt"
-  "io/ioutil"
-  "os"
   "strings"
 )
 
@@ -36,7 +34,8 @@ type policyStatement struct {
 
 type action []string
 
-func parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
+// Parses a Cloudtrail log file
+func Parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
   trail := cloudtrailLog{}
 
   if err := json.Unmarshal([]byte(cloudtrailJSON), &trail); err != nil {
@@ -46,7 +45,8 @@ func parse(cloudtrailJSON string) (*[]cloudtrailRecord, error) {
   return &trail.Records, nil
 }
 
-func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
+// Creates a struct that represents a Policy Document
+func CreatePolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   actions := action{}
 
   for _, val := range *r {
@@ -63,7 +63,8 @@ func createPolicy(r *[]cloudtrailRecord) (policyDocument, error) {
   return document, nil
 }
 
-func createPolicyJSON(doc policyDocument) ([]byte, error) {
+// Turns a struct representation of a Policy Document into the actual JSON
+func CreatePolicyJSON(doc policyDocument) ([]byte, error) {
   result, err := json.MarshalIndent(doc, "", "  ")
 
   if err != nil {

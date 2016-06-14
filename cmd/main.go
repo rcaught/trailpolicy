@@ -1,26 +1,26 @@
 package main
 
 import (
-  "encoding/json"
   "fmt"
+  "github.com/rcaught/trailpolicy"
   "io/ioutil"
   "os"
-  "strings"
 )
 
 func main() {
   bytes, _ := ioutil.ReadAll(os.Stdin)
 
-  if cloudtrailRecords, err := parse(string(bytes)); err != nil {
+  if cloudtrailRecords, err := trailpolicy.Parse(string(bytes)); err != nil {
     fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
   } else {
-    if val, err := createPolicy(cloudtrailRecords); err != nil {
+    if val, err := trailpolicy.CreatePolicy(cloudtrailRecords); err != nil {
       fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
     } else {
-      if j, err := createPolicyJSON(val); err != nil {
+      if j, err := trailpolicy.CreatePolicyJSON(val); err != nil {
         fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
       } else {
         fmt.Print(string(j))
+        fmt.Print("test")
       }
     }
   }
