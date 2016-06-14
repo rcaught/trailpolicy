@@ -20,7 +20,6 @@ func main() {
         fmt.Println(fmt.Errorf("xxxxx: %s", err.Error()))
       } else {
         fmt.Print(string(j))
-        fmt.Print("test")
       }
     }
   }
