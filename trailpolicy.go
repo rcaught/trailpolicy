@@ -44,13 +44,17 @@ func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
   return &trail.Records, nil
 }
 
+func deriveAction(record cloudtrailRecord) string {
+  service := strings.Split(record.EventSource, ".")[0]
+
+  return service + ":" + record.EventName
+}
+
 func createPolicy(r *[]cloudtrailRecord) (*policyDocument, error) {
   actions := actions{}
 
-  for _, val := range *r {
-    service := strings.Split(val.EventSource, ".")[0]
-    action := service + ":" + val.EventName
-
+  for _, record := range *r {
+    action := deriveAction(record)
     actions = append(actions, action)
   }
 
