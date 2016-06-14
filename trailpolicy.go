@@ -38,7 +38,7 @@ func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
   trail := cloudtrailLog{}
 
   if err := json.Unmarshal(cloudtrailJSON, &trail); err != nil {
-    return nil, fmt.Errorf("Error unmarshaling Cloudtrail JSON: %s", err.Error())
+    return nil, err
   }
 
   return &trail.Records, nil
@@ -65,7 +65,7 @@ func createPolicyJSON(doc policyDocument) ([]byte, error) {
   result, err := json.MarshalIndent(doc, "", "  ")
 
   if err != nil {
-    return nil, fmt.Errorf("Error marshaling Policy Document: %s", err.Error())
+    return nil, err
   }
 
   return result, nil
@@ -76,19 +76,19 @@ func Convert(cloudtrailJSON []byte) (string, error) {
   cloudtrailRecords, err := parse(cloudtrailJSON)
 
   if err != nil {
-    return "", fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("Error parsing Cloudtrail log: %s", err.Error())
   }
 
   policy, err := createPolicy(cloudtrailRecords)
 
   if err != nil {
-    return "", fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("Error creating Policy Document: %s", err.Error())
   }
 
   json, err := createPolicyJSON(policy)
 
   if err != nil {
-    return "", fmt.Errorf("xxxxx: %s", err.Error())
+    return "", fmt.Errorf("Error encoding Policy Document: %s", err.Error())
   }
 
   return string(json), nil
