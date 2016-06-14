@@ -2,6 +2,11 @@
 
 Derive an AWS IAM Policy Document from actions found within Cloudtrail logs.
 
+## Installation
+```
+go get github.com/rcaught/trailpolicy/...
+```
+
 ## Usage
 ```
 $ cat cloudtrail.log | trailpolicy > policydocument.json
