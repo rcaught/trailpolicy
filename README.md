@@ -14,7 +14,7 @@ $ cat cloudtrail.log | trailpolicy > policydocument.json
 
 ## Example
 ```
-$ cat test.log
+$ cat cloudtrail.log
 {
     "Records": [{
         "eventVersion": "1.0",
@@ -59,7 +59,7 @@ $ cat test.log
   ]
 }
 
-$ cat test.log | trailpolicy
+$ cat cloudtrail.log | trailpolicy
 {
   "Version": "2012-10-17",
   "Statement": [
