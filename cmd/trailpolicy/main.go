@@ -11,7 +11,7 @@ func main() {
   bytes, _ := ioutil.ReadAll(os.Stdin)
 
   if policyDocument, err := trailpolicy.Convert(bytes); err != nil {
-    fmt.Println(fmt.Errorf("Error: %s", err.Error()))
+    fmt.Print(err.Error())
   } else {
     fmt.Print(policyDocument)
   }
