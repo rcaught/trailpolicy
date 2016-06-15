@@ -13,7 +13,7 @@ $ cat cloudtrail.log | trailpolicy > policydocument.json
 ```
 
 ## Example
-```
+``` bash
 $ cat cloudtrail.log
 {
     "Records": [{
