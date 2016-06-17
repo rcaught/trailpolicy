@@ -7,7 +7,7 @@ install:
   - "go get -t -v ./..."
   - "go build -v ./..."
 
-before_deploy:
+# before_deploy:
   - "mkdir -p releases/linux"
   - "mkdir -p releases/darwin"
   - "GOOS=linux GOARCH=386 go build -o releases/linux/trailpolicy github.com/rcaught/trailpolicy/cmd/trailpolicy"
@@ -15,6 +15,8 @@ before_deploy:
   - "cd releases/linux"
   - "chmod +x trailpolicy"
   - "zip linux.zip trailpolicy"
+  - "pwd"
+  - "ls -al"
   - "cd ../darwin"
   - "chmod +x trailpolicy"
   - "zip macos.zip trailpolicy"
