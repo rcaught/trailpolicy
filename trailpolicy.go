@@ -3,6 +3,7 @@ package trailpolicy
 import (
 	"encoding/json"
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -22,11 +23,9 @@ type policyDocument struct {
 
 type policyStatement struct {
 	Effect   string
-	Action   actions
+	Action   []string
 	Resource string
 }
-
-type actions []string
 
 func parse(cloudtrailJSON []byte) (*[]cloudtrailRecord, error) {
 	trail := cloudtrailLog{}
@@ -52,9 +51,19 @@ func createPolicy(r *[]cloudtrailRecord) (*policyDocument, error) {
 		actions[action] = struct{}{}
 	}
 
+	keys := make([]string, len(actions))
+
+	i := 0
+	for k := range actions {
+		keys[i] = k
+		i++
+	}
+
+	sort.Strings(keys)
+
 	document := policyDocument{
 		Version:   "2012-10-17",
-		Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: actions}}}
+		Statement: []policyStatement{{Effect: "Allow", Resource: "*", Action: keys}}}
 
 	return &document, nil
 }
