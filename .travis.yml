@@ -18,7 +18,7 @@ before_deploy:
   - "cd ../darwin"
   - "chmod +x trailpolicy"
   - "zip macos.zip trailpolicy"
-  - "cd .."
+  - "cd ../.."
 
 deploy:
   provider: releases
