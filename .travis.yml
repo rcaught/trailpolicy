@@ -7,7 +7,8 @@ install:
   - "mkdir -p releases"
   - "GOOS=linux GOARCH=amd64 go build -o releases/trailpolicy-linux-amd64 github.com/rcaught/trailpolicy/cmd/trailpolicy"
   - "GOOS=linux GOARCH=386 go build -o releases/trailpolicy-linux-386 github.com/rcaught/trailpolicy/cmd/trailpolicy"
-  - "GOOS=linux GOARCH=darwin go build -o releases/trailpolicy-darwin github.com/rcaught/trailpolicy/cmd/trailpolicy"
+  - "GOOS=darwin GOARCH=amd64 go build -o releases/trailpolicy-darwin-amd64 github.com/rcaught/trailpolicy/cmd/trailpolicy"
+  - "GOOS=darwin GOARCH=386 go build -o releases/trailpolicy-darwin-386 github.com/rcaught/trailpolicy/cmd/trailpolicy"
 
 deploy:
   provider: releases
