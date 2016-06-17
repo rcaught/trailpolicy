@@ -1,20 +1,20 @@
 package trailpolicy_test
 
 import (
-	"github.com/rcaught/trailpolicy"
-	"github.com/stretchr/testify/assert"
+  "github.com/rcaught/trailpolicy"
+  "github.com/stretchr/testify/assert"
 
-	"fmt"
-	"io/ioutil"
-	"testing"
+  "fmt"
+  "io/ioutil"
+  "testing"
 )
 
 func TestConvertSingle(t *testing.T) {
-	bytes, _ := ioutil.ReadFile("fixtures/single.log")
+  bytes, _ := ioutil.ReadFile("fixtures/single.log")
 
-	result, _ := trailpolicy.Convert(bytes)
+  result, _ := trailpolicy.Convert(bytes)
 
-	expected := `{
+  expected := `{
   "Version": "2012-10-17",
   "Statement": [
     {
@@ -27,15 +27,15 @@ func TestConvertSingle(t *testing.T) {
   ]
 }`
 
-	assert.Equal(t, expected, result)
+  assert.Equal(t, expected, result)
 }
 
 func TestConvertMultiple(t *testing.T) {
-	bytes, _ := ioutil.ReadFile("fixtures/multiple.log")
+  bytes, _ := ioutil.ReadFile("fixtures/multiple.log")
 
-	result, _ := trailpolicy.Convert(bytes)
+  result, _ := trailpolicy.Convert(bytes)
 
-	expected := `{
+  expected := `{
   "Version": "2012-10-17",
   "Statement": [
     {
@@ -53,13 +53,13 @@ func TestConvertMultiple(t *testing.T) {
 }
 
 func TestConvertError(t *testing.T) {
-	bytes, _ := ioutil.ReadFile("fixtures/bad.log")
+  bytes, _ := ioutil.ReadFile("fixtures/bad.log")
 
-	result, err := trailpolicy.Convert(bytes)
+  result, err := trailpolicy.Convert(bytes)
 
-	resultExpected := ""
-	errorExpected := fmt.Errorf("Error parsing Cloudtrail log: invalid character ':' after top-level value")
+  resultExpected := ""
+  errorExpected := fmt.Errorf("Error parsing Cloudtrail log: invalid character ':' after top-level value")
 
-	assert.Equal(t, resultExpected, result)
-	assert.Equal(t, errorExpected, err)
+  assert.Equal(t, resultExpected, result)
+  assert.Equal(t, errorExpected, err)
 }
