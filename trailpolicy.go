@@ -1,3 +1,4 @@
+// Package trailpolicy will derive an AWS IAM Policy Document from actions found within Cloudtrail logs.
 package trailpolicy
 
 import (
