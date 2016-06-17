@@ -1,4 +1,4 @@
-# trailpolicy [![GoDoc](https://godoc.org/github.com/rcaught/trailpolicy?status.svg)](https://godoc.org/github.com/rcaught/trailpolicy)
+# trailpolicy [![Build Status](https://travis-ci.org/rcaught/trailpolicy.svg?branch=master)](https://travis-ci.org/rcaught/trailpolicy) [![GoDoc](https://godoc.org/github.com/rcaught/trailpolicy?status.svg)](https://godoc.org/github.com/rcaught/trailpolicy)
 
 Derive an AWS IAM Policy Document from actions found within Cloudtrail logs.
 
