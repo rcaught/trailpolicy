@@ -2,12 +2,12 @@ language: go
 go:
   - 1.6
 install:
-  # - "sudo apt-get install golang-go-linux-386"
   - "go get -t -v ./..."
   - "go build -v ./..."
-  # - "mkdir -p releases"
-  # - "GOOS=linux GOARCH=amd64 go build -o releases/trailpolicy-linux-amd64 github.com/rcaught/trailpolicy/cmd/trailpolicy"
-  # - "GOOS=linux GOARCH=386 go build -o releases/myproject-linux-386 github.com/rcaught/trailpolicy/cmd/trailpolicy"
+  - "mkdir -p releases"
+  - "GOOS=linux GOARCH=amd64 go build -o releases/trailpolicy-linux-amd64 github.com/rcaught/trailpolicy/cmd/trailpolicy"
+  - "GOOS=linux GOARCH=386 go build -o releases/trailpolicy-linux-386 github.com/rcaught/trailpolicy/cmd/trailpolicy"
+  - "GOOS=linux GOARCH=darwin go build -o releases/trailpolicy-darwin github.com/rcaught/trailpolicy/cmd/trailpolicy"
 
 deploy:
   provider: releases
