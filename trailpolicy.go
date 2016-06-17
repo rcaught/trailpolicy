@@ -45,11 +45,11 @@ func deriveAction(record cloudtrailRecord) string {
 }
 
 func createPolicy(r *[]cloudtrailRecord) (*policyDocument, error) {
-	actions := actions{}
+	actions := make(map[string]struct{})
 
 	for _, record := range *r {
 		action := deriveAction(record)
-		actions = append(actions, action)
+		actions[action] = struct{}{}
 	}
 
 	document := policyDocument{
