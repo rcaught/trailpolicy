@@ -1,6 +1,7 @@
+sudo: required
 language: go
 install:
-  - "apt-get install golang-go-linux-386"
+  - "sudo apt-get install golang-go-linux-386"
   - "go get -t -v ./..."
   - "go build -v ./..."
   - "mkdir -p releases"
