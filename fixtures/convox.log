@@ -1,0 +1,1776 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeTags",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 10000,
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "9c2b40d9-4386-4ee5-aeef-59b9b14216fa",
+      "eventID": "b8a99be8-16e9-432a-a0ec-e0de0f2e72c7",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2a"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "9eaf9591-deca-44b6-b808-d7e572b9216b",
+      "eventID": "fb7f5e66-6cb8-47aa-840c-c0743c61d7e1",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "securityGroupSet": {},
+        "securityGroupIdSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "95671294-ad59-458e-9210-1a97e7252f29",
+      "eventID": "04d64ff0-44ba-4cb2-a955-60a734e1baee",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "securityGroupSet": {},
+        "securityGroupIdSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "d6e83348-4b93-4b3e-a42c-35e08f329f54",
+      "eventID": "867fb83a-ead6-4f0e-ab54-6cede8620494",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "securityGroupSet": {},
+        "securityGroupIdSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "1b27a03e-5120-40b8-b0c4-868ceaef0c6e",
+      "eventID": "b0e1e221-f27f-49f7-a6af-670d3c66efbc",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:33Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "securityGroupSet": {},
+        "securityGroupIdSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "85fbdcb4-d7cc-4053-8b63-67176508f943",
+      "eventID": "29f6c93f-ef6d-42be-8081-3e3cc51409ed",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ASIAIKLBUCJINF7KM3BA",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:12:48Z",
+      "eventSource": "cloudformation.amazonaws.com",
+      "eventName": "ListStacks",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {
+        "stackStatusFilter": [
+          "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS",
+          "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS",
+          "UPDATE_IN_PROGRESS",
+          "DELETE_IN_PROGRESS",
+          "ROLLBACK_IN_PROGRESS",
+          "ROLLBACK_FAILED",
+          "UPDATE_ROLLBACK_IN_PROGRESS",
+          "UPDATE_ROLLBACK_FAILED",
+          "ROLLBACK_COMPLETE",
+          "DELETE_FAILED",
+          "CREATE_COMPLETE",
+          "UPDATE_COMPLETE",
+          "CREATE_FAILED",
+          "CREATE_IN_PROGRESS",
+          "UPDATE_ROLLBACK_COMPLETE"
+        ]
+      },
+      "responseElements": null,
+      "requestID": "e0305783-33aa-11e6-be32-25b5c01a0ce1",
+      "eventID": "27bc23dc-1efa-4d4f-b754-79b59cc1580b",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2c"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "09343cbb-50d0-4504-99aa-0d24c24be6f2",
+      "eventID": "967b99e6-d20e-4c88-842d-34a7b2d55582",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2a"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "847a43c0-4a62-44f4-8904-b2bd326f83e0",
+      "eventID": "70c02d1a-def4-4254-a991-f756e60b42ab",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:31Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "pageSize": 300
+      },
+      "responseElements": null,
+      "requestID": "6576fdee-33ab-11e6-bdcd-931700d79f05",
+      "eventID": "af9daec3-5559-49ac-825e-6583bd6d7a0e",
+      "eventType": "AwsApiCall",
+      "apiVersion": "2012-06-01",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:17Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAddresses",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "publicIpsSet": {},
+        "filterSet": {},
+        "allocationIdsSet": {}
+      },
+      "responseElements": null,
+      "requestID": "22f31349-60da-46c9-b1d3-6b7ca98226f0",
+      "eventID": "9d99c04a-27f7-46f3-ba9e-47ffd5988108",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:16Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "15f28516-8092-4a1a-9da9-47193ec3df8b",
+      "eventID": "1004b858-e5c1-4aed-be07-ccd5790a0e74",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ASIAIKLBUCJINF7KM3BA",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:13:55Z",
+      "eventSource": "cloudformation.amazonaws.com",
+      "eventName": "ListStacks",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {
+        "stackStatusFilter": [
+          "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS",
+          "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS",
+          "UPDATE_IN_PROGRESS",
+          "DELETE_IN_PROGRESS",
+          "ROLLBACK_IN_PROGRESS",
+          "ROLLBACK_FAILED",
+          "UPDATE_ROLLBACK_IN_PROGRESS",
+          "UPDATE_ROLLBACK_FAILED",
+          "ROLLBACK_COMPLETE",
+          "DELETE_FAILED",
+          "CREATE_COMPLETE",
+          "UPDATE_COMPLETE",
+          "CREATE_FAILED",
+          "CREATE_IN_PROGRESS",
+          "UPDATE_ROLLBACK_COMPLETE"
+        ]
+      },
+      "responseElements": null,
+      "requestID": "082e3928-33ab-11e6-adfc-6d26004f35a3",
+      "eventID": "c503060f-d108-4c0c-b058-1c30e2f515b7",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "364b56d9-33ab-11e6-a6ed-f36d5708cd0b",
+      "eventID": "a0165d1d-2642-4e2a-bc20-014a15e388f4",
+      "eventType": "AwsApiCall",
+      "apiVersion": "2012-06-01",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribePlacementGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "placementGroupSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "b86fb7ec-cf10-4683-9f57-7ff6d077286b",
+      "eventID": "27c9ce93-f62e-4617-911b-1a6c761e5aa3",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:16Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAccountAttributes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "accountAttributeNameSet": {
+          "items": [
+            {
+              "attributeName": "default-vpc"
+            }
+          ]
+        },
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "df9d5528-4aa5-4fe8-bb79-ba6eebad84d1",
+      "eventID": "106ffc42-4650-4ced-81be-1d883d40bf4d",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 1000,
+        "instancesSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "1846bd8e-4d72-421c-a83c-3abca6f5ffea",
+      "eventID": "6b3e8b77-9f17-4f09-8477-f17d77c62a44",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeStaleSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "DescribeStaleSecurityGroupsRequest": {
+          "VpcId": "vpc-2338b947",
+          "MaxResults": "5"
+        }
+      },
+      "responseElements": null,
+      "requestID": "d279343d-675e-4bf2-a792-cfd2b3403321",
+      "eventID": "89fcd3a3-02af-4601-ac07-16d64288d5f3",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSnapshots",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "snapshotSet": {},
+        "ownersSet": {
+          "items": [
+            {
+              "owner": "self"
+            }
+          ]
+        },
+        "sharedUsersSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "04207c33-eae5-4305-aaf1-2cd4cb03603d",
+      "eventID": "5bf78ff8-2611-4d94-8d4d-57e168f8956f",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2b"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "6e9fb7c6-84c5-42c2-85e7-0e36116d5116",
+      "eventID": "9f0ac5dd-a966-4719-afc9-211948af791f",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2b"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "16c6690d-1482-486f-ae73-06ceabb0da1e",
+      "eventID": "27e98213-cbe2-42d1-9f89-aac899d70fe8",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeTags",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 10000,
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "914b4323-6905-4707-8233-227bd453e483",
+      "eventID": "b6b2c7e4-7733-42c7-8ee0-77feec15ed46",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "elasticloadbalancing.amazonaws.com",
+      "eventName": "DescribeLoadBalancers",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "pageSize": 300
+      },
+      "responseElements": null,
+      "requestID": "3857c8cb-33ab-11e6-93ba-3322bb22fd8e",
+      "eventID": "854e52ba-6964-4ae1-8f8a-353a7616e148",
+      "eventType": "AwsApiCall",
+      "apiVersion": "2012-06-01",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeTags",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 10000,
+        "filterSet": {
+          "items": [
+            {
+              "name": "resource-id",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "sg-fc22dc9a"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "5945383e-fa0b-4137-923e-1d71e8e21866",
+      "eventID": "71f17bef-ffc1-4aac-a184-205c239e681a",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2c"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "30c5ddbb-59ba-4a39-8121-4cad9f7da9c3",
+      "eventID": "e2e9495f-8eba-4e7e-b5bd-64c12e9c3c65",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAvailabilityZones",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "availabilityZoneSet": {}
+      },
+      "responseElements": null,
+      "requestID": "f4520580-32ae-4d9e-af76-60bca2310b0b",
+      "eventID": "62957bf8-e2e0-4444-938c-907871abfbe1",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2c"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "c6133adf-30a7-45cb-9847-3b18ff9979bb",
+      "eventID": "009e59c1-ae6d-4857-a3c0-69e07955758b",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:17Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstanceStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "instancesSet": {},
+        "filterSet": {},
+        "includeAllInstances": false
+      },
+      "responseElements": null,
+      "requestID": "ef055e5e-6abc-496f-8e07-bc5c91065155",
+      "eventID": "a81f3af0-3730-4ca2-8c36-097fffadad51",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:37Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSnapshots",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "snapshotSet": {},
+        "ownersSet": {},
+        "sharedUsersSet": {
+          "items": [
+            {
+              "user": "self"
+            }
+          ]
+        },
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "e874bfcb-21a7-4a3b-a328-37ffed17871c",
+      "eventID": "31f081dd-36c2-4468-bfdc-8fdd436d498a",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2a"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "48fe55b2-f410-4f8f-80bd-ef212c2a55fe",
+      "eventID": "b3c03ff1-d0a1-45d9-9ed3-665cd72337d7",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2c"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "537c2141-9542-4c27-b39d-dabc654a1c6c",
+      "eventID": "f193c349-b055-47a0-a5da-fb49d7c671f6",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:21Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVpcs",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "vpcSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "c2392a34-6815-4ebe-861f-e636446a5fc5",
+      "eventID": "066113ed-a1ab-4da7-a6b0-c670b0e68cd1",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:16Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAccountAttributes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "accountAttributeNameSet": {
+          "items": [
+            {
+              "attributeName": "supported-platforms"
+            }
+          ]
+        },
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "f1e4447e-6ec2-46ca-af4d-ccd9556f3580",
+      "eventID": "2ad3728d-698b-4ee0-b425-3703036a3616",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeKeyPairs",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "keySet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "8922ef71-a26a-4189-93a3-a3a6279daf8d",
+      "eventID": "925b5d83-f678-45f8-b680-90bc98148a69",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstanceStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "instancesSet": {},
+        "filterSet": {},
+        "includeAllInstances": false
+      },
+      "responseElements": null,
+      "requestID": "fd0b43de-d9c9-4316-a854-98baadf4c216",
+      "eventID": "2f3c472e-bdc8-4a3c-85f6-b18b59d41fce",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumeStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2b"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "520119af-ce85-4d19-a875-c786650839b1",
+      "eventID": "d8f5ba00-a33d-4dcb-99c1-b456fa332cb1",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:16Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstanceStatus",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "instancesSet": {},
+        "filterSet": {},
+        "includeAllInstances": false
+      },
+      "responseElements": null,
+      "requestID": "a3b5e07a-0f06-4cd7-843c-4b8dffd63d22",
+      "eventID": "91a628b8-c9fd-4175-bdeb-a8e9d620450e",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "cc991bfd-b955-4915-a2a8-a00eb08774c8",
+      "eventID": "61327f31-1b5b-4c19-a5ff-16630ab2938c",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:16Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAvailabilityZones",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "availabilityZoneSet": {}
+      },
+      "responseElements": null,
+      "requestID": "03fdce62-77a5-47d8-9fb4-16883a12327d",
+      "eventID": "1a803d2b-e607-4aac-9c1a-5d045e320233",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "securityGroupSet": {},
+        "securityGroupIdSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "a4b7e1c9-1a44-4b9a-85bb-9c368a37faeb",
+      "eventID": "2ab66e2f-21a9-4b7b-bf56-b18730addbfc",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAvailabilityZones",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "availabilityZoneSet": {}
+      },
+      "responseElements": null,
+      "requestID": "65e88a92-dba7-4c9c-b475-c12b0e2b72e3",
+      "eventID": "9a83b5bb-c4c2-4271-954d-f0cc355fb25b",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSnapshots",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "snapshotSet": {},
+        "ownersSet": {},
+        "sharedUsersSet": {
+          "items": [
+            {
+              "user": "self"
+            }
+          ]
+        },
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "56613964-f75b-4fb9-b0cb-fcd6737d0c00",
+      "eventID": "6fb82d67-82c4-4521-b69e-bd946684a37a",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2a"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "47d35187-d941-459e-a45d-6ed9d85f6354",
+      "eventID": "7a27e20a-6faf-4e6e-bbee-10d4ca55bf44",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeHosts",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "DescribeHostsRequest": {
+          "Filter": {
+            "Value": {
+              "tag": "1",
+              "content": "available"
+            },
+            "tag": "1",
+            "Name": "state"
+          }
+        }
+      },
+      "responseElements": null,
+      "requestID": "2c7bed19-3f10-43cf-97d8-0cefae1ddcfd",
+      "eventID": "d25f9f4c-9ba3-4417-8498-40a56af6ec24",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 1000,
+        "instancesSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "6273030e-158d-4a0b-84d3-3c9f9efffb38",
+      "eventID": "bbb1a985-1fc0-4137-acbc-a0659d76f9bc",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:15:15Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAddresses",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "publicIpsSet": {},
+        "filterSet": {},
+        "allocationIdsSet": {}
+      },
+      "responseElements": null,
+      "requestID": "45913776-4352-4bf1-bdeb-d00568aef7ef",
+      "eventID": "6611d2e0-5134-468b-8869-e6a72d944ffd",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:17Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 1000,
+        "instancesSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "23bef6d8-cee5-4d3a-b8d1-e884dfe819fb",
+      "eventID": "6652773d-23c7-416d-bfc1-9905eec620cd",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:31Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeTags",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 10000,
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "1edfd4e6-da13-42fe-bd5c-2570d0adae4a",
+      "eventID": "3267dbd1-c4de-4d2a-acc2-4b7d79510ada",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    },
+    {
+      "eventVersion": "1.03",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "PRINCIPLE_ID",
+        "arn": "arn:aws:iam::PRINCIPLE_ID:root",
+        "accountId": "PRINCIPLE_ID",
+        "accessKeyId": "ANOTHER_ACCESS_KEY_ID",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "true",
+            "creationDate": "2016-06-16T06:02:55Z"
+          }
+        }
+      },
+      "eventTime": "2016-06-16T10:16:40Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeVolumes",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "ANOTHER_SOURCE_IP",
+      "userAgent": "console.ec2.amazonaws.com",
+      "requestParameters": {
+        "volumeSet": {},
+        "filterSet": {
+          "items": [
+            {
+              "name": "availability-zone",
+              "valueSet": {
+                "items": [
+                  {
+                    "value": "us-west-2b"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "4485a9ef-04d9-47f6-b702-8f725982a476",
+      "eventID": "31c24448-a5d4-4358-8b7e-691e464c0073",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "PRINCIPLE_ID"
+    }
+  ]
+}
