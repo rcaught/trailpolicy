@@ -1,1 +1,10 @@
 language: go
+deploy:
+  provider: releases
+  api_key:
+    secure: Tfb927b11lr89L2Sr45b5vJpScr+103FQlBDOUyA6VSSqBb6ET5KmgRzWroZSyYOo92ENbzSwu5gutXzWMk3wH/5xaxsSQY/yM61jSfj3+fwUg48ubJ2E+8Vi4lcCj7THP1e8cvdpwaRkcZRzKT6md18dY804GOXpXL3Z8cvriJ7SL7/1GRmOoXYrwPZeS7eUx1EVS9odIQLKTwEhWMkLNHXFB5XKW+Xsv6Ntum3pgQc3bYo1kSfCr1QwjHFxc4ui6MyjUZwQa/fIZgswTRpPD41qJ8/e1TZz6E8N/seqjkCbUsX198vF1fifHcxADY06C5bVd/x8EinWp6hbGUwe6ZWSm5Nca+MKgyNjQncAdgfOjUqEhvwHRlagUZmIm6FASwg4pKcfAW3G+QzBAxoihOV0wR+R6hGXCCA+CFZbOL7Mt+zPT5LTZosjH0z3RpZcJnVMONMApRKnvE8mcPZGelC81GdRTc9o2rRlkcSb2Dt7nSw4iDpU5LTlhROQchTLHXH4BSqpG3OyxvY5VCksaq2yPVRnJZOg8D7PILM3pUqzlbuYv2LnX72E7cUif5YPAA1ST3GYBH4iP01Zwl8MLzA0c6woMGPMrudhnTg20kP7yFJ71RpnTLo/7/NQsn4RRpzV0bN9gJt64Qio+U85HCmYtNd3Fo9rjUHKS/qEQc=
+  file: trailpolicy
+  skip_cleanup: true
+  on:
+    repo: rcaught/trailpolicy
+    tags: true
