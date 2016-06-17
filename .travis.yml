@@ -2,7 +2,6 @@ language: go
 install:
   - "go get -t -v ./..."
   - "go build -v ./..."
-release:
   - "mkdir -p releases"
   - "GOOS=linux GOARCH=amd64 go build -o releases/trailpolicy-linux-amd64 github.com/rcaught/trailpolicy"
   - "GOOS=linux GOARCH=386 go build -o releases/myproject-linux-386 github.com/rcaught/trailpolicy"
