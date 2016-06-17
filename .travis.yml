@@ -1,4 +1,7 @@
 language: go
+install:
+  - "go get -d -v ./..."
+  - "go build -v ./..."
 deploy:
   provider: releases
   api_key:
