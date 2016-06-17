@@ -1,4 +1,6 @@
 language: go
+go:
+  - 1.6
 install:
   # - "sudo apt-get install golang-go-linux-386"
   - "go get -t -v ./..."
