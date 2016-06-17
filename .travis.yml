@@ -1,9 +1,13 @@
 language: go
+
 go:
   - 1.6
+
 install:
   - "go get -t -v ./..."
   - "go build -v ./..."
+
+before_deploy:
   - "mkdir -p releases"
   - "GOOS=linux GOARCH=amd64 go build -o releases/trailpolicy-linux-amd64 github.com/rcaught/trailpolicy/cmd/trailpolicy"
   - "GOOS=linux GOARCH=386 go build -o releases/trailpolicy-linux-386 github.com/rcaught/trailpolicy/cmd/trailpolicy"
