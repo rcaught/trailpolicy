@@ -1,33 +1,28 @@
 language: go
-
 go:
-  - 1.12
-
+- 1.12
 install:
-  - "go get -t -v ./..."
-  - "go build -v ./..."
-
+- go get -t -v ./...
+- go build -v ./...
 before_deploy:
-  - "mkdir -p releases/linux"
-  - "mkdir -p releases/darwin"
-  - "GOOS=linux GOARCH=386 go build -o releases/linux/trailpolicy github.com/rcaught/trailpolicy/cmd/trailpolicy"
-  - "GOOS=darwin GOARCH=386 go build -o releases/darwin/trailpolicy github.com/rcaught/trailpolicy/cmd/trailpolicy"
-  - "cd releases/linux"
-  - "chmod +x trailpolicy"
-  - "zip linux.zip trailpolicy"
-  - "cd ../darwin"
-  - "chmod +x trailpolicy"
-  - "zip macos.zip trailpolicy"
-  - "cd ../.."
-
+- mkdir -p releases/linux
+- mkdir -p releases/darwin
+- GOOS=linux GOARCH=386 go build -o releases/linux/trailpolicy github.com/rcaught/trailpolicy/cmd/trailpolicy
+- GOOS=darwin GOARCH=386 go build -o releases/darwin/trailpolicy github.com/rcaught/trailpolicy/cmd/trailpolicy
+- cd releases/linux
+- chmod +x trailpolicy
+- zip linux.zip trailpolicy
+- cd ../darwin
+- chmod +x trailpolicy
+- zip macos.zip trailpolicy
+- cd ../..
 deploy:
   provider: releases
   api_key:
-    secure: Tfb927b11lr89L2Sr45b5vJpScr+103FQlBDOUyA6VSSqBb6ET5KmgRzWroZSyYOo92ENbzSwu5gutXzWMk3wH/5xaxsSQY/yM61jSfj3+fwUg48ubJ2E+8Vi4lcCj7THP1e8cvdpwaRkcZRzKT6md18dY804GOXpXL3Z8cvriJ7SL7/1GRmOoXYrwPZeS7eUx1EVS9odIQLKTwEhWMkLNHXFB5XKW+Xsv6Ntum3pgQc3bYo1kSfCr1QwjHFxc4ui6MyjUZwQa/fIZgswTRpPD41qJ8/e1TZz6E8N/seqjkCbUsX198vF1fifHcxADY06C5bVd/x8EinWp6hbGUwe6ZWSm5Nca+MKgyNjQncAdgfOjUqEhvwHRlagUZmIm6FASwg4pKcfAW3G+QzBAxoihOV0wR+R6hGXCCA+CFZbOL7Mt+zPT5LTZosjH0z3RpZcJnVMONMApRKnvE8mcPZGelC81GdRTc9o2rRlkcSb2Dt7nSw4iDpU5LTlhROQchTLHXH4BSqpG3OyxvY5VCksaq2yPVRnJZOg8D7PILM3pUqzlbuYv2LnX72E7cUif5YPAA1ST3GYBH4iP01Zwl8MLzA0c6woMGPMrudhnTg20kP7yFJ71RpnTLo/7/NQsn4RRpzV0bN9gJt64Qio+U85HCmYtNd3Fo9rjUHKS/qEQc=
+    secure: QEpPHoulFt84Sw+NwUu9LCflL50EwL05BmsarrGAuGxcpPgt0PnHAPdvTv04G/RiiciTGx8cG5hDuKkj9+GqRYOOpTbrLTZCFewKfViw5aMmfW7AmzwuZbUQyIg8vgj9KWZLOreUNAFGL3ZnqtaZx/0ya67BJip1jBBjeay/U4hhxROXnW85aKq0N10ixLgbYvw4c5rlbeLkt9b/00Il7d8RT8VIsvLDm+2T5tvXQPkinJqKq6nBXZqE+h7eXf7tujxBs5vVQPuqnNjIipwsREJTxD71q/W5gh4e0VosVdtqs9Q2Vtm22c0Vpp/JuX1fm/UPvCq4ilGvN8nq7wsr22S8OfKN41P1YjtOwUSbg5OlhGg1HT6YKp6lhiBvToAV7mI05k9YvPClsx+PKkBi/9xrL2hbHT4Jd2OPjPL+b5UZUBJNkWSVt+i/q85yPQ1yg3WhC7dxOADBnrAGGJrvm8kxxvIAUA5iwfQ3vXjJydZn1WnJ840J3DBCp1gg3nuRrSnxzYM5L2XwrXJXCbadht+IrM4F4MFfF41qufUAEMb3qFo78CPMQ5XCFBko1FpEPF6+10KBPVxgBEOwYDj0X0rZHoSZRs4PMJBoI+Er8JrE3T6Tynb1nKUQfxfDAerCnJvO2BofFxtHzldXQpt66qKRWAszfKKTb8zDoMELoqY=
   file:
-    - releases/linux/linux.zip
-    - releases/darwin/macos.zip
-  skip_cleanup: true
+  - releases/linux/linux.zip
+  - releases/darwin/macos.zip
   on:
     repo: rcaught/trailpolicy
     tags: true
