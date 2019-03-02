@@ -84,20 +84,20 @@ func Convert(cloudtrailJSON []byte) (string, error) {
 	cloudtrailRecords, err := parse(cloudtrailJSON)
 
 	if err != nil {
-		return "", fmt.Errorf("Error parsing Cloudtrail log: %s", err.Error())
+		return "", fmt.Errorf("error parsing Cloudtrail log: %s", err.Error())
 	}
 
 	policy, err := createPolicy(cloudtrailRecords)
 
 	if err != nil {
-		return "", fmt.Errorf("Error creating Policy Document: %s", err.Error())
+		return "", fmt.Errorf("error creating Policy Document: %s", err.Error())
 	}
 
-	json, err := createPolicyJSON(policy)
+	jsonPolicy, err := createPolicyJSON(policy)
 
 	if err != nil {
-		return "", fmt.Errorf("Error encoding Policy Document: %s", err.Error())
+		return "", fmt.Errorf("error encoding Policy Document: %s", err.Error())
 	}
 
-	return string(*json), nil
+	return string(*jsonPolicy), nil
 }
