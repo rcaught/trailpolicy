@@ -9,12 +9,12 @@ $ go get github.com/rcaught/trailpolicy/...
 ```
 ##### MacOS
 ```
-$ curl -Ls https://github.com/rcaught/trailpolicy/releases/download/v0.0.1/macos.zip > /tmp/trailpolicy.zip
+$ curl -Ls https://github.com/rcaught/trailpolicy/releases/latest/download/macos.zip > /tmp/trailpolicy.zip
 $ unzip /tmp/trailpolicy.zip -d /usr/local/bin
 ```
 ##### Linux
 ```
-$ curl -Ls https://github.com/rcaught/trailpolicy/releases/download/v0.0.1/linux.zip > /tmp/trailpolicy.zip
+$ curl -Ls https://github.com/rcaught/trailpolicy/releases/latest/download/linux.zip > /tmp/trailpolicy.zip
 $ unzip /tmp/trailpolicy.zip -d /usr/local/bin
 ```
 
